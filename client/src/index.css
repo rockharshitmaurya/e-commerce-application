@@ -1,0 +1,11 @@
+*{
+  
+  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Urbanist', sans-serif;
+  
+  margin: 0;
+}
+
+#root{
+  overflow: hidden;
+}
