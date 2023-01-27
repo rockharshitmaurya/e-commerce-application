@@ -62,6 +62,13 @@ const toastOptions = {
   theme: "dark",
 };
 
+const bodyStyles = {
+  background:
+    "linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://images.pexels.com/photos/6984661/pexels-photo-6984661.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+};
+
 const Register = () => {
   const navigate = useNavigate();
   const [username, setUsername] = useState("");
@@ -117,7 +124,7 @@ const Register = () => {
   };
 
   return (
-    <Container>
+    <Container style={bodyStyles}>
       <Wrapper>
         <Title>Create and Account</Title>
         <Form>
@@ -139,10 +146,8 @@ const Register = () => {
             onChange={(e) => setCPassword(e.target.value)}
           />
           <Agreement>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
-            tenetur adipisci enim qui? Quis, recusandae odit! Quam molestiae
-            minima atque magni accusantium consequatur, suscipit at officiis
-            voluptatem possimus nemo natus!
+            By creating an account, I consent to the processing of my personal
+            data in accordance with the <b>PRIVACY POLICY</b>.
           </Agreement>
           <ToastContainer />
           <Button onClick={handleClick}>Create</Button>

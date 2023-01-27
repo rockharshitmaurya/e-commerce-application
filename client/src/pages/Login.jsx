@@ -58,6 +58,13 @@ const Button = styled.button`
   }
 `;
 
+const bodyStyles = {
+  background:
+    "linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center",
+  backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
+};
+
 const Error = styled.div`
   color: red;
 `;
@@ -72,7 +79,7 @@ const Login = () => {
     login(dispatch, { username, password });
   };
   return (
-    <Container>
+    <Container style={bodyStyles}>
       <Wrapper>
         <Title>Log In</Title>
         <Form>
