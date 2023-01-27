@@ -1,4 +1,4 @@
-import { Facebook ,Instagram , Twitter} from "@mui/icons-material";
+import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
@@ -15,28 +15,23 @@ const Left = styled.div`
 `;
 const Logo = styled.h1``;
 const Desc = styled.p`
-margin: 20px 0px;
-
+  margin: 20px 0px;
 `;
 const SocialIcon = styled.div`
-width:40px;
-height:40px;
-margin-right: 20px;
-border-radius:50%;
-color: white;
-display: flex;
-justify-content: center;
-background-color: ${props=>props.bg};
-align-items: center;
-cursor:pointer;
-${mobile({ flexDirection: "column" })}
-
-
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: ${(props) => props.bg};
+  align-items: center;
+  cursor: pointer;
+  ${mobile({ flexDirection: "column" })}
 `;
 const SocialContianer = styled.div`
-display:flex;
-
-
+  display: flex;
 `;
 
 const Center = styled.div`
@@ -51,41 +46,44 @@ const Right = styled.div`
   ${mobile({ backgroundColor: "#fff8f8" })}
 `;
 
-const Title = styled.h3  `
-  margin-bottom:30px;
-
-`
+const Title = styled.h3`
+  margin-bottom: 30px;
+`;
 const List = styled.ul`
-margin: 0;
-padding: 0;
-list-style: none;
-display: flex;
-flex-wrap: wrap;
-
-`
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+`;
 const ListItem = styled.li`
-width: 50%;
-margin-bottom: 10px;
-`
+  width: 50%;
+  margin-bottom: 10px;
+`;
 const Footer = () => {
   return (
     <Container>
       <Left>
-        <Logo>Ecommerce</Logo>
+        <Logo>Shopspree</Logo>
         <Desc>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente,
-          optio tenetur aliquid, animi libero dolor ipsum voluptatum totam
-          asperiores quasi inventore eveniet, doloremque atque est repellendus
-          distinctio excepturi deserunt culpa?
+          ShopSpree is an e-commerce platform that offers a wide variety of
+          products at unbeatable prices. With ShopSpree, customers can easily
+          browse and purchase products across a range of categories including
+          clothing, electronics, home goods, and more. We pride ourselves on our
+          user-friendly interface and fast, reliable shipping. Our goal is to
+          make online shopping a breeze for our customers, allowing them to find
+          the products they need and get them delivered to their door as quickly
+          as possible. With ShopSpree, you'll be able to find everything you
+          need in one convenient location.
         </Desc>
         <SocialContianer>
-          <SocialIcon bg='red'>
+          <SocialIcon bg="red">
             <Facebook />
           </SocialIcon>
-          <SocialIcon bg='green'>
+          <SocialIcon bg="green">
             <Instagram />
           </SocialIcon>
-          <SocialIcon bg='teal'>
+          <SocialIcon bg="teal">
             <Twitter />
           </SocialIcon>
         </SocialContianer>

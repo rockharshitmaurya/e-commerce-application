@@ -60,7 +60,7 @@ const Button = styled.button`
 
 const bodyStyles = {
   background:
-    "linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://images.pexels.com/photos/6984650/pexels-photo-6984650.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940) center center",
+    "linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(https://st3.depositphotos.com/1177973/13382/i/600/depositphotos_133827136-stock-photo-beautiful-woman-in-fashion-clothes.jpg) center center",
   backgroundSize: "cover",
   backgroundRepeat: "no-repeat",
 };
@@ -91,6 +91,7 @@ const Login = () => {
           <Input
             placeholder="password"
             onChange={(e) => setPassword(e.target.value)}
+            type="password"
           />
 
           <Button onClick={handleClick} disabled={isFetching}>

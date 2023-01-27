@@ -89,7 +89,7 @@ const Navbar = () => {
           </SerachContainer>
         </Left>
         <Center>
-          <Logo>Ecommerce.</Logo>
+          <Logo>Shopspree</Logo>
         </Center>
         <Right>
           {!user && (
