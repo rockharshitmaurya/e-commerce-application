@@ -1,4 +1,4 @@
-# The Lama Shop
+# Shopspree
 
 ### [Live Demo](https://shopspree08.netlify.app/)
 
@@ -6,7 +6,7 @@ An ecommerce platform made with React.js, Tailwind Css, Redux, Stripe, Email Js,
 It also has an [Admin](https://admin-shopspree.netlify.app/) Panel to edit and add products on the store.
 
 ## App Features
-- This ecommerce store is buit using Next js and Tailwind Css. 
+- This ecommerce store is buit using React js and Tailwind Css. 
 - State management is done using Redux and Redux Persist to persist the app's state like user login and cart on reload.
 - We can register a new account, login to add products. 
 - User authentication is done using JWT.
