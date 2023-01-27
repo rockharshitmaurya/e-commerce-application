@@ -162,11 +162,13 @@ const Cart = () => {
   const [stripeToken, setStripeToken] = useState(null);
   const navigate = useNavigate();
   const KEY = import.meta.env.VITE_STRIPE_PUBLIC_KEY;
-
+  const user = useSelector((state) => state.user.currentUser);
   const handleToken = async (token, adresses) => {
     setStripeToken(token);
   };
-
+  const redirectCheckout = () => {
+    navigate("/login");
+  };
   useEffect(() => {
     const paymentRequest = async () => {
       try {
@@ -250,17 +252,21 @@ const Cart = () => {
               <SummaryItemText>Total</SummaryItemText>
               <SummaryItemPrice>${cart.total}</SummaryItemPrice>
             </SummaryItem>
-            <StripeCheckout
-              stripeKey={KEY}
-              token={handleToken}
-              billingAddress
-              shippingAddress
-              description={`Your Total is $ ${cart.total}`}
-              amount={cart.total}
-              name="Harshit Maurya"
-            >
-              <Button>CHECKOUT NOW</Button>
-            </StripeCheckout>
+
+            {user && (
+              <StripeCheckout
+                stripeKey={KEY}
+                token={handleToken}
+                billingAddress
+                shippingAddress
+                description={`Your Total is $ ${cart.total}`}
+                amount={cart.total}
+                name="Harshit Maurya"
+              >
+                <Button>CHECKOUT NOW</Button>
+              </StripeCheckout>
+            )}
+            {!user && <Button onClick={redirectCheckout}>CHECKOUT NOW</Button>}
           </Summary>
         </Bottom>
       </Wrapper>

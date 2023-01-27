@@ -77,7 +77,7 @@ const Login = () => {
         <Title>Log In</Title>
         <Form>
           <Input
-            placeholder="email"
+            placeholder="username"
             onChange={(e) => setUsername(e.target.value)}
           />
 
@@ -91,7 +91,7 @@ const Login = () => {
           </Button>
           {error && <Error>Something went wrong.</Error>}
           <Link href="#">Forget Password?</Link>
-          <Link href="#">Create a Account</Link>
+          <Link href="/register">Create a Account</Link>
         </Form>
       </Wrapper>
     </Container>
