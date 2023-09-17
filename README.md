@@ -23,6 +23,6 @@ It also has an [Admin](https://admin-shopspree.netlify.app/) Panel to edit and a
 
 
 - Admin account 
-  - username: lama_admin
+  - username: i_am_admin
   - password: 123
 
